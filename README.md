@@ -1,5 +1,5 @@
 # Carol Componentes
-Versão 2 — **Movimento e proximidade**. Identidade verde mineral, superfícies claras e composição mecânica que responde à rolagem. Atendimento em Joinville com envio para todo o Brasil. Barlow e Source Sans; marca tipográfica provisória. A primeira proposta permanece no histórico/tag v1.0.0.
+Versão 2.1 — **Movimento e proximidade**. Identidade verde mineral, superfícies claras e composição mecânica que responde à rolagem. Atendimento em Joinville com envio para todo o Brasil. Barlow e Source Sans; marca tipográfica provisória. A primeira proposta permanece no histórico/tag v1.0.0.
 
 ## Funcionalidades
 Catálogo público com 50 produtos principais, 290 variantes e 16 categorias; busca, grade/lista, filtros, medidas, informação adicional, desenhos, comparação de três peças, favoritos e cotação persistidos no dispositivo. PDF técnico de 60 páginas com nova identidade, mapa de Joinville e área autenticada de pedidos de melhoria.
@@ -8,9 +8,10 @@ O contato exige CNPJ válido e telefone com DDD; registra a solicitação antes 
 
 O domínio carolcomponentes.com.br faz parte da identidade; compra, DNS e correio não foram alterados. O mesmo Site de homologação no ChatGPT Pages/Sites está atualmente público; esta entrega preserva essa configuração.
 
-Busca com resultados no próprio campo, navegação que acompanha a seção e painel de produto que preserva filtros e rolagem. Linha animada explica selecionar, cotar e receber. Mapa em painel com atendimento local e alcance nacional. Respeita redução de movimento.
+Busca com resultados no próprio campo, navegação que acompanha a seção e painel de produto que preserva filtros e rolagem. Linha animada explica selecionar, cotar e receber. Mapa em painel com atendimento local e alcance nacional. Respeita redução de movimento. Volante animado na chegada/hover, comparação guiada, contatos com máscaras e validação por campo, WhatsApp identificado e canais sociais.
 
 ## Documentação
+- [Institucional e redes](docs/SOCIAL-AND-ABOUT.md)
 - [Direção visual 2](docs/DESIGN-V2.md)
 - [Evidências de validação](docs/RELEASE.md)
 - [Roadmap](docs/ROADMAP.md)

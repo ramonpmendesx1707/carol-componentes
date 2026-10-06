@@ -18,6 +18,6 @@ export async function POST(request:Request){
   }
   const text=['Olá! Gostaria de uma cotação com a Carol Componentes — Joinville.',`CNPJ: ${cnpj}`,`Telefone: ${phone}`,name?`Nome: ${name}`:'',`Interesse: ${source}`,...items.map((i:{name:string;variant:string;qty:number})=>`${i.qty} × ${i.name}${i.variant?' | '+i.variant:''}`),message?`Mensagem: ${message}`:''].filter(Boolean).join('\n');
   return Response.json({id:input.id,simulated:true,whatsappUrl:`https://api.whatsapp.com/send?phone=5547996180088&text=${encodeURIComponent(text)}`});
- }catch{return Response.json({error:'Não foi possível registrar a demonstração. Tente novamente.'},{status:503});}
+ }catch{return Response.json({error:'Não foi possível registrar seu contato. Tente novamente.'},{status:503});}
 }
 

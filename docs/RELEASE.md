@@ -1,3 +1,11 @@
+# Evidências da entrega 2.1
+
+06/10/2026. `scripts/verify-browser.mjs` e `scripts/verify-refinements.mjs` passaram em Chrome headless: navegação preservada, encaminhamento WhatsApp, máscaras durante digitação, estados por campo, bloqueio de requisição com dados inválidos, CNPJ com dígitos errados, DDD inválido, telefone fixo e colagem +55; chegada/hover do volante, zoom dos componentes e clique, comparação lado a lado, três links sociais, móvel sem overflow e redução de movimento. Capturas de formulário, social e celular revisadas. Zero exceções no teste geral. `scripts/verify-site.mjs` passou para API/catálogo/PDF/contato/feedback. TypeScript passou. Build exigido no fluxo de publicação.
+
+Fontes e limites da seção social/institucional em SOCIAL-AND-ABOUT.md. E-mail continua sem disparo real, conforme decisão anterior. O mesmo Site e audiência pública preservados. Catálogo/PDF e pendências de dados permanecem.
+
+---
+
 # Evidências da entrega 2.0
 
 06/10/2026. Nova composição Movimento e proximidade; detalhes em DESIGN-V2.md. Catálogo e PDF técnico preservados. Sem alterações em esquema do banco ou serviço de e-mail.

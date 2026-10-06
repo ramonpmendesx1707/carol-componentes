@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./movement.css";
 
 export const metadata: Metadata = {
   title: "Carol Componentes Industriais | Joinville",

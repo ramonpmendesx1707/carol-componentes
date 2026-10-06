@@ -1,14 +1,18 @@
 # Carol Componentes
-Primeira proposta para a operação exclusiva de Joinville. Direção **Precisão industrial**, azul profundo, amarelo e branco, Barlow e Source Sans. A marca tipográfica é provisória. Segunda variação visual após avaliação da primeira.
+Versão 2 — **Movimento e proximidade**. Identidade verde mineral, superfícies claras e composição mecânica que responde à rolagem. Atendimento em Joinville com envio para todo o Brasil. Barlow e Source Sans; marca tipográfica provisória. A primeira proposta permanece no histórico/tag v1.0.0.
 
 ## Funcionalidades
 Catálogo público com 50 produtos principais, 290 variantes e 16 categorias; busca, grade/lista, filtros, medidas, informação adicional, desenhos, comparação de três peças, favoritos e cotação persistidos no dispositivo. PDF técnico de 60 páginas com nova identidade, mapa de Joinville e área autenticada de pedidos de melhoria.
 
-O contato exige CNPJ válido e telefone com DDD; registra o teste antes de abrir WhatsApp preenchido, exclusivamente **5547996180088**. O usuário confirmou que **e-mail permanece demonstrativo**. Destinatário futuro: ramonpmendesx@gmail.com. A interface não afirma envio real. Não há checkout, pagamentos, estoque real ou CAD fictício. Frete e prazos são explicitamente simulados. Preço zero na origem é apresentado sob consulta.
+O contato exige CNPJ válido e telefone com DDD; registra a solicitação antes de abrir WhatsApp preenchido, exclusivamente **5547996180088**. O usuário confirmou que **e-mail permanece demonstrativo**. Destinatário futuro: ramonpmendesx@gmail.com. A interface não afirma envio real. Não há checkout, pagamentos, estoque real ou CAD fictício. Frete e prazos são explicitamente simulados. Preço zero na origem é apresentado sob consulta.
 
-O domínio carolcomponentes.com.br faz parte da identidade; compra, DNS e correio não foram alterados. A publicação de homologação inicia privada no ChatGPT Pages/Sites.
+O domínio carolcomponentes.com.br faz parte da identidade; compra, DNS e correio não foram alterados. O mesmo Site de homologação no ChatGPT Pages/Sites está atualmente público; esta entrega preserva essa configuração.
+
+Busca com resultados no próprio campo, navegação que acompanha a seção e painel de produto que preserva filtros e rolagem. Linha animada explica selecionar, cotar e receber. Mapa em painel com atendimento local e alcance nacional. Respeita redução de movimento.
 
 ## Documentação
+- [Direção visual 2](docs/DESIGN-V2.md)
+- [Evidências de validação](docs/RELEASE.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Infraestrutura e correio](docs/INFRASTRUCTURE.md)
 - [Referências de mercado](docs/COMPETITORS.md)

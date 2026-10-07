@@ -36,3 +36,5 @@ Tabelas cc_state, cc_sessions, cc_attempts, cc_backups e cc_contacts inicializad
 Rotas de navegação são relativas à base de publicação. /admin/ recebe index próprio no Pages para abrir diretamente. Produtos usam hash/modal e fallback de navegação. Links sociais e mapas seguem externos intencionalmente. A antiga validação Sites foi removida da navegação. /api/contato legado não é o fluxo atual.
 
 Validar build Pages e Worker, autenticação/negação anônima, senha inicial, exportar/importar, revisão simultânea, CRUD, 12 destaques, celular 320/390/768, comparação vertical, timeline subindo/descendo e imagens locais. Não executar carga destrutiva no catálogo de produção como teste; use banco local isolado.
+
+O botão Baixar versões anteriores exporta os 20 snapshots privados autenticados, incluindo fotos. Para restaurar, um operador autorizado seleciona um payload e o aplica ao catálogo via PUT /api/manage/catalog com a revisão atual, após revisar o conteúdo. Contatos permitem baixar o HTML formatado do e-mail; isso não indica envio.

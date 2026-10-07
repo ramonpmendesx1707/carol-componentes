@@ -1,6 +1,6 @@
 import source from '@/data/catalog.json';
 export type Variant={id:number;sku:string;label:string;weight:string;dimensions:string;image:string|null;attributes:{name:string;value:string}[]};
-export type Product={id:number;slug:string;name:string;sku:string;brand:string;type:string;summary:string;description:string;categories:{id:number;name:string;slug:string}[];image:string;images:string[];attributes:{name:string;value:string}[];weight:string;dimensions:string;variations:Variant[]};
+export type Product={price?:number;homepage?:boolean;section?:string;id:number;slug:string;name:string;sku:string;brand:string;type:string;summary:string;description:string;categories:{id:number;name:string;slug:string}[];image:string;images:string[];attributes:{name:string;value:string}[];weight:string;dimensions:string;variations:Variant[]};
 export const products=source.products as Product[];
 export const categories=source.categories;
 export const families=[{name:'Rolamentos e mancais',page:6,text:'Esferas, eixos, buchas e conjuntos de apoio.'},{name:'Fixação e retenção',page:16,text:'Anéis elásticos, arruelas e pinos.'},{name:'Ferramentaria',page:23,text:'Pinos, punções, molas e chavetas.'},{name:'Grampos e fechos',page:34,text:'Fixação vertical, horizontal e pneumática.'},{name:'Elementos de máquinas',page:44,text:'Manípulos, alavancas, cabos e volantes.'},{name:'Químicos industriais',page:52,text:'Manutenção, proteção e fluidos de corte.'}];

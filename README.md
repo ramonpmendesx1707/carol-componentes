@@ -1,3 +1,5 @@
+> Atualização v2.3.0: consulte [administração e integrações](docs/ADMINISTRACAO.md) para o backend compartilhado, autenticação, Excel, CNPJ e e-mail. As limitações antigas de catálogo exclusivamente estático foram substituídas pela arquitetura descrita nesse documento.
+
 # Carol Componentes
 
 Prévia GitHub Pages: https://ramonpmendesx1707.github.io/carol-componentes/ . Repositório público por autorização explícita do proprietário. Publicação automática via Actions; verificar execução para estado atual.

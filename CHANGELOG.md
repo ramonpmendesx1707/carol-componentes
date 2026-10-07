@@ -1,3 +1,11 @@
+## 2.3.0 — 2026-10-06
+- Timeline vinculada à própria linha, progressão reversível de 1984 a 2026 e traço mais espesso; remoção da nota visível solicitada.
+- Marca capitalizada, CTA WhatsApp verde, ícone de comparação em colunas e catálogo visual maior.
+- Navegação Pages interna; validação externa removida.
+- Administração autenticada, catálogo D1 compartilhado, CRUD, 12 destaques, Excel completo, prévia de substituição e snapshots.
+- Consulta OpenCNPJ e mensagens empresariais formatadas; e-mail condicionado ao provedor configurado.
+- Foto PBF recuperada da origem; registro em data/image-recovery-v23.json.
+
 # Histórico
 
 ## 2.2.0 — 06/10/2026

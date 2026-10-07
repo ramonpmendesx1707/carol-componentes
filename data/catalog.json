@@ -37,7 +37,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/chf-5927-chave-de-fecho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/chf-5927-chave-de-fecho-merkbak/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Chaves de Fecho",
+      "price": 0
     },
     {
       "id": 10246,
@@ -201,7 +204,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/v3r-volante-tres-raios-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/volante-tres-raios/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Volantes",
+      "price": 0
     },
     {
       "id": 10197,
@@ -290,7 +296,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/cap-cabo-alca-polipropileno-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-alca-polipropileno/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9971,
@@ -424,7 +433,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/v2r-s-alma-c-cabo-volante-dois-raios-sem-alma-de-ferro-com-cabo-giratorio-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/volante-dois-raios-sem-alma-de-ferro-c-cabo-giratorio/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Volantes",
+      "price": 0
     },
     {
       "id": 9970,
@@ -528,7 +540,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/vos-visor-de-oleo-sextavado-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/visor-de-oleo-sextavado/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Visores de Óleo",
+      "price": 0
     },
     {
       "id": 9969,
@@ -767,7 +782,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/pna-pe-nivelador-articulado-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/pe-nivelador-articulado/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Pés Niveladores",
+      "price": 0
     },
     {
       "id": 9968,
@@ -841,7 +859,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/pnz-pe-nivelador-zincado-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/pe-nivelador-2/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Pés Niveladores",
+      "price": 0
     },
     {
       "id": 9967,
@@ -960,7 +981,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/pnm-pe-nivelador-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/pe-nivelador/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Pés Niveladores",
+      "price": 0
     },
     {
       "id": 9966,
@@ -979,8 +1003,10 @@
           "link": "https://carolfix.com.br/categoria-produto/puxadores/"
         }
       ],
-      "image": "/images/photo-pending.svg",
-      "images": [],
+      "image": "/images/recovered-9966.png",
+      "images": [
+        "/images/recovered-9966.png"
+      ],
       "attributes": [
         {
           "name": "Peso",
@@ -1046,7 +1072,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/pbf-puxador-bola-femea-merkbak/",
       "technicalSource": "https://carolfix.com.br/produto/pbf-puxador-bola-femea-merkbak/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Puxadores",
+      "price": 0
     },
     {
       "id": 9965,
@@ -1089,7 +1118,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/prf-3932-5-16-puxador-recartilhado-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/puxador-recartilhado-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Puxadores",
+      "price": 0
     },
     {
       "id": 9964,
@@ -1343,7 +1375,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/msm-manipulo-standard-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/manipulo-standard-macho/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Manípulos",
+      "price": 0
     },
     {
       "id": 9963,
@@ -1612,7 +1647,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/msf-manipulo-standard-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/manipulo-standard-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Manípulos",
+      "price": 0
     },
     {
       "id": 9962,
@@ -1986,7 +2024,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/mtm-manipulo-termoplastico-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/manipulo-termoplastico-macho/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Manípulos",
+      "price": 0
     },
     {
       "id": 9961,
@@ -2300,7 +2341,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/mtf-manipulo-termoplastico-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/manipulo-termoplastico-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Manípulos",
+      "price": 0
     },
     {
       "id": 9960,
@@ -2449,7 +2493,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/m3pf-manipulo-tres-pontas-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/manipulo-tres-pontas-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Manípulos",
+      "price": 0
     },
     {
       "id": 9959,
@@ -2553,7 +2600,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/kr-knob-retratil-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/knob-retratil/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Knobs",
+      "price": 0
     },
     {
       "id": 9958,
@@ -2732,7 +2782,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/km-knob-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/knob-macho/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Knobs",
+      "price": 0
     },
     {
       "id": 9957,
@@ -2866,7 +2919,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/kf-knob-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/knob-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Knobs",
+      "price": 0
     },
     {
       "id": 9956,
@@ -3180,7 +3236,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/ktm-knob-termoplastico-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/knob-termoplastico-macho/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Knobs",
+      "price": 0
     },
     {
       "id": 9955,
@@ -3344,7 +3403,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/ktf-knob-termoplastico-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/knob-termoplastico-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Knobs",
+      "price": 0
     },
     {
       "id": 9954,
@@ -3383,7 +3445,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/btm-2613-m6x14-botao-trava-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/botao-trava/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Botões",
+      "price": 0
     },
     {
       "id": 9953,
@@ -3422,7 +3487,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/bpf-2126-1-4-botao-puxador-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/botao-puxador-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Botões",
+      "price": 0
     },
     {
       "id": 9952,
@@ -3496,7 +3564,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/ce-cabo-estriado-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-estriado/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9951,
@@ -3615,7 +3686,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/crp-cabo-recartilhado-plastico-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-recartilhado-plastico/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9950,
@@ -3719,7 +3793,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/cr-cabo-recartilhado-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-recartilhado/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9949,
@@ -3793,7 +3870,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/cga-cabo-giratorio-anatomico-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-giratorio-anatomico-3096/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9948,
@@ -3832,7 +3912,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/cb-26100-cabo-basculante-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-basculante/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9947,
@@ -3966,7 +4049,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/cgc-cabo-giratorio-completo-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-giratorio-completo/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9946,
@@ -4055,7 +4141,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/cep-cabo-estriado-plastico-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-estriado-plastico/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9945,
@@ -4385,7 +4474,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/ep-esfera-baquelite-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/esfera-baquelite/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Esferas de Baquelite",
+      "price": 0
     },
     {
       "id": 9944,
@@ -4428,7 +4520,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/mbm-40167-16x45-macaneta-baquelite-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/macaneta-mae/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Maçanetas",
+      "price": 0
     },
     {
       "id": 9943,
@@ -4517,7 +4612,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/mcg-manivela-com-cabo-giratorio-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/manivela-com-cabo-giratorio/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Manivelas",
+      "price": 0
     },
     {
       "id": 9942,
@@ -4591,7 +4689,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/mbf-macaneta-baquelite-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/macaneta/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Maçanetas",
+      "price": 0
     },
     {
       "id": 9941,
@@ -4634,7 +4735,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/cap-p-104-cabo-alca-polipropileno-mod-p-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-alca-polipropileno-mod-p/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9940,
@@ -4723,7 +4827,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/can-cabo-alca-nylon-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-alca-nylon-polipropileno/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9939,
@@ -4766,7 +4873,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/cpa-091-1-4-cabo-puxador-alca-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-puxador-alca/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9938,
@@ -4991,7 +5101,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/ca-cabo-alca-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-alca-baquelite/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9937,
@@ -5125,7 +5238,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/ces-cabo-estilizado-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-estilizado/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9936,
@@ -5304,7 +5420,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/cst-cabo-standard-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-standard/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9935,
@@ -5393,7 +5512,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/co-cabo-oval-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/cabo-oval-de-baquelite/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Cabos",
+      "price": 0
     },
     {
       "id": 9934,
@@ -5632,7 +5754,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/atm-alavanca-trava-macho-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/alavanca-trava-macho/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Alavancas",
+      "price": 0
     },
     {
       "id": 9933,
@@ -5766,7 +5891,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/atf-alavanca-trava-femea-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/alavanca-trava-femea/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Alavancas",
+      "price": 0
     },
     {
       "id": 9932,
@@ -5809,7 +5937,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/vot-visor-de-oleo-standard-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/visor-de-oleo-standard/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Visores de Óleo",
+      "price": 0
     },
     {
       "id": 9931,
@@ -5943,7 +6074,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/v2r-s-alma-volante-dois-raios-sem-alma-de-ferro-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/volante-dois-raios-sem-alma-de-ferro/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Volantes",
+      "price": 0
     },
     {
       "id": 9930,
@@ -6047,7 +6181,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/vf-volante-fechado-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/volante-fechado/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Volantes",
+      "price": 0
     },
     {
       "id": 9929,
@@ -6211,7 +6348,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/v3r-c-cabo-volante-tres-raios-com-cabo-giratorio-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/volante-tres-raios-com-cabo-giratorio/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Volantes",
+      "price": 0
     },
     {
       "id": 9928,
@@ -6254,7 +6394,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/vcb-150-volante-com-cabo-basculante-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/volante-com-cabo-basculante/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Volantes",
+      "price": 0
     },
     {
       "id": 9927,
@@ -6297,7 +6440,10 @@
       "variations": [],
       "sourceUrl": "https://carolfix.com.br/produto/dp-dobradica-plana-180o-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/dobradica-plana-180o/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Dobradiças",
+      "price": 0
     },
     {
       "id": 9926,
@@ -6417,7 +6563,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/en-engrenagem-conica-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/engrenagem-conica/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": false,
+      "section": "Engrenagens",
+      "price": 0
     },
     {
       "id": 9925,
@@ -6521,7 +6670,10 @@
       ],
       "sourceUrl": "https://carolfix.com.br/produto/br-bucha-rolete-com-encaixe-para-rolamentos-merkbak/",
       "technicalSource": "https://merkbak.com.br/produto/bucha-rolete-com-encaixe-para-rolamentos/",
-      "sourcePrice": "0"
+      "sourcePrice": "0",
+      "homepage": true,
+      "section": "Buchas para rolamento",
+      "price": 0
     }
   ],
   "categories": [

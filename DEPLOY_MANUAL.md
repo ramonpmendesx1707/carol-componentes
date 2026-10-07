@@ -1,3 +1,5 @@
+> Atualização v2.3.0: consulte [administração e integrações](docs/ADMINISTRACAO.md) para o backend compartilhado, autenticação, Excel, CNPJ e e-mail. As limitações antigas de catálogo exclusivamente estático foram substituídas pela arquitetura descrita nesse documento.
+
 # Instalação, GitHub Pages e domínio oficial
 
 ## 1. Restaurar o projeto

@@ -45,3 +45,6 @@ O manifesto .openai/hosting.json identifica o mesmo Site para próximas alteraç
 
 ## Continuidade
 Registrar melhoria em /validacao e voltar à conversa com a área, página e comportamento esperado. O registro não executa alterações automaticamente. Cada entrega deve atualizar CHANGELOG, validar recursos e publicar nova versão do mesmo Site. GitHub privado é o histórico de código independente; remoto Sites publica a aplicação.
+
+## Seleção integrada de produtos
+Salvos e linhas de cotação são combinados por lib/selection.ts. O contador superior abre a seleção completa; todos os botões de contato incluem essa seleção na mensagem. Favorito sem medida é enviado como “Medida a definir”. Linhas com medida têm prioridade sobre o favorito do mesmo produto. A persistência continua local, separada em cada site. Mensagens não são enviadas automaticamente pelo WhatsApp.

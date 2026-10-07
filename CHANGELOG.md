@@ -1,5 +1,8 @@
 ## 2.4.0 — 2026-10-06
 - Corrige o reconhecimento de caminhos de imagens recebidas da API após o transform do Pages, inclusive fotos técnicas em descrições. Regressão verificada com imagens realmente carregadas.
+## 2.5.0 — 2026-10-07
+Produtos salvos entram no contador superior e na seleção enviada ao WhatsApp/e-mail. Uma referência já especificada não é duplicada pelo favorito. Medidas ausentes são sinalizadas; quantidades e remoção funcionam na seleção. Ícone de salvar com contraste e preenchimento visíveis. Validação em navegador com persistência e payload de contato interceptado, sem envio real.
+
 - Marca Componentes Industriais na mesma linha; remove a repetição acima do título; CTA Chamar no WhatsApp e assinatura discreta do autor.
 - Administração: botões de ação alinhados, galeria de até 10 fotos, seleção/remoção de principal, categorias existentes e cadastro de nova categoria.
 - Endereço gerado automaticamente por nome, com sufixo para duplicidade; produtos existentes mantêm o endereço ao editar.

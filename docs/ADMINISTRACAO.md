@@ -38,3 +38,6 @@ Rotas de navegação são relativas à base de publicação. /admin/ recebe inde
 Validar build Pages e Worker, autenticação/negação anônima, senha inicial, exportar/importar, revisão simultânea, CRUD, 12 destaques, celular 320/390/768, comparação vertical, timeline subindo/descendo e imagens locais. Não executar carga destrutiva no catálogo de produção como teste; use banco local isolado.
 
 O botão Baixar versões anteriores exporta os 20 snapshots privados autenticados, incluindo fotos. Para restaurar, um operador autorizado seleciona um payload e o aplica ao catálogo via PUT /api/manage/catalog com a revisão atual, após revisar o conteúdo. Contatos permitem baixar o HTML formatado do e-mail; isso não indica envio.
+
+## Testes da versão
+`scripts/verify-v23-browser.mjs` aceita CAROL_TEST_URL, CAROL_PLAYWRIGHT_PACKAGE e CAROL_CHROME_EXECUTABLE. `scripts/verify-admin-api.mjs` exige banco isolado local e CAROL_ADMIN_TEST_PASSWORD; o teste recusa host remoto porque altera produtos e senha. Os testes de UI também confirmaram ida e volta do Excel com 49 produtos no banco de teste, cadastro manual, seleção de 12 destaques e layout mobile. A produção iniciou com os 50 produtos e 290 medidas preservados.

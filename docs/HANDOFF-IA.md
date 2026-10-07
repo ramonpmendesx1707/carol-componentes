@@ -1,3 +1,5 @@
+> v2.3.0: leia primeiro [ADMINISTRACAO.md](ADMINISTRACAO.md). O catálogo editável e o login são executados pelo Worker/D1; o GitHub Pages exibe a interface. Segredos, fotos editadas e banco de produção exigem migração privada além do código. As limitações de versão antiga abaixo são histórico.
+
 # Handoff completo para outra IA
 
 ## Estado do produto

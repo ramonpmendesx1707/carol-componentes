@@ -2,19 +2,12 @@ import source from '../data/catalog.json';
 import {lookupCompany,contactText,contactHtml,type Contact} from '../lib/company';
 import {validCnpj,normalizedPhone} from '../lib/validation';
 import type {Product} from '../lib/catalog';
-type Env={DB?:D1Database;ADMIN_INITIAL_HASH?:string;RESEND_API_KEY?:string;EMAIL_FROM?:string};
+type Env={BUCKET?:R2Bucket;DB?:D1Database;ADMIN_INITIAL_HASH?:string;RESEND_API_KEY?:string;EMAIL_FROM?:string};
 const origins=new Set(['https://ramonpmendesx1707.github.io','https://carolcomponentes.com.br','https://www.carolcomponentes.com.br','https://carol-componentes-industriais.safc-conceicao87.chatgpt.site','http://127.0.0.1:4173','http://127.0.0.1:4174','http://127.0.0.1:8787']);
 const enc=new TextEncoder();
 async function digest(s:string){return [...new Uint8Array(await crypto.subtle.digest('SHA-256',enc.encode(s)))].map(n=>n.toString(16).padStart(2,'0')).join('')}
 async function passwordHash(password:string,salt:string){const key=await crypto.subtle.importKey('raw',enc.encode(password),'PBKDF2',false,['deriveBits']);const bits=await crypto.subtle.deriveBits({name:'PBKDF2',hash:'SHA-256',salt:enc.encode(salt),iterations:100000},key,256);return [...new Uint8Array(bits)].map(n=>n.toString(16).padStart(2,'0')).join('')}
 function equal(a:string,b:string){let d=a.length^b.length;for(let i=0;i<Math.max(a.length,b.length);i++)d|=(a.charCodeAt(i)||0)^(b.charCodeAt(i)||0);return d===0}
-async function initialize(db:D1Database){await db.batch([
- db.prepare('CREATE TABLE IF NOT EXISTS cc_state (id TEXT PRIMARY KEY, payload TEXT NOT NULL, revision INTEGER NOT NULL DEFAULT 1)'),
- db.prepare('CREATE TABLE IF NOT EXISTS cc_sessions (id TEXT PRIMARY KEY, expires INTEGER NOT NULL)'),
- db.prepare('CREATE TABLE IF NOT EXISTS cc_attempts (id TEXT PRIMARY KEY, attempts INTEGER NOT NULL, since INTEGER NOT NULL)'),
- db.prepare('CREATE TABLE IF NOT EXISTS cc_backups (id TEXT PRIMARY KEY, payload TEXT NOT NULL, created INTEGER NOT NULL)'),
- db.prepare('CREATE TABLE IF NOT EXISTS cc_contacts (id TEXT PRIMARY KEY, payload TEXT NOT NULL, html TEXT NOT NULL, status TEXT NOT NULL, created INTEGER NOT NULL)')]);
-}
 export function validateCatalog(input:unknown):Product[]{
  if(!Array.isArray(input)||input.length<1||input.length>5000)throw Error('O catálogo deve conter entre 1 e 5.000 produtos.');const ids=new Set(),slugs=new Set();let variantCount=0;
  return input.map((raw)=>{const p=raw as Product;if(!Number.isSafeInteger(p.id)||p.id<1||ids.has(p.id))throw Error('Há IDs de produto inválidos ou repetidos.');ids.add(p.id);if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.slug)||slugs.has(p.slug))throw Error('Use endereços (slugs) únicos, em letras minúsculas, números e hífens.');slugs.add(p.slug);
@@ -28,13 +21,14 @@ export function validateCatalog(input:unknown):Product[]{
  });
 }
 export async function catalogApi(request:Request,env:Env):Promise<Response|null>{
- const url=new URL(request.url),path=url.pathname;if(!['/api/catalog','/api/company','/api/contact'].includes(path)&&!path.startsWith('/api/manage/'))return null;
+ const url=new URL(request.url),path=url.pathname;if(!['/api/catalog','/api/company','/api/contact'].includes(path)&&!path.startsWith('/api/manage/')&&!path.startsWith('/api/media/'))return null;
  const origin=request.headers.get('Origin');const allowed=!origin||origins.has(origin);const headers:Record<string,string>={'Cache-Control':'no-store','Vary':'Origin','X-Content-Type-Options':'nosniff'};
  if(origin&&allowed)headers['Access-Control-Allow-Origin']=origin;headers['Access-Control-Allow-Headers']='Content-Type, Authorization';headers['Access-Control-Allow-Methods']='GET, POST, PUT, OPTIONS';
  const reply=(data:unknown,status=200)=>Response.json(data,{status,headers});if(!allowed)return reply({error:'Origem não autorizada.'},403);if(request.method==='OPTIONS')return new Response(null,{status:204,headers});
  try{
+ if(path.startsWith('/api/media/')){if(!/^\/api\/media\/[a-f0-9-]{36}$/.test(path)||!env.BUCKET)return reply({error:'Imagem não encontrada.'},404);const object=await env.BUCKET.get('products/'+path.split('/').pop());if(!object)return reply({error:'Imagem não encontrada.'},404);return new Response(object.body,{headers:{...headers,'Content-Type':object.httpMetadata?.contentType||'image/webp','Cache-Control':'public,max-age=31536000,immutable'}});}
  if(path==='/api/company'){const cnpj=url.searchParams.get('cnpj')||'';if(!validCnpj(cnpj))return reply({error:'CNPJ inválido.'},400);try{return reply(await lookupCompany(cnpj))}catch{return reply({error:'Consulta indisponível agora. Continue com seus dados.'},503)}}
- const db=env.DB;if(!db)return reply({error:'Servidor de catálogo ainda não configurado.'},503);await initialize(db);
+ const db=env.DB;if(!db)return reply({error:'Servidor de catálogo ainda não configurado.'},503);
  const seed=JSON.stringify({products:source.products});await db.prepare('INSERT OR IGNORE INTO cc_state(id,payload) VALUES (?,?)').bind('catalog',seed).run();
  if(env.ADMIN_INITIAL_HASH)await db.prepare('INSERT OR IGNORE INTO cc_state(id,payload) VALUES (?,?)').bind('admin',JSON.stringify({username:'carol',hash:env.ADMIN_INITIAL_HASH,mustChange:true})).run();
  const row=await db.prepare('SELECT payload,revision FROM cc_state WHERE id=?').bind('catalog').first<{payload:string;revision:number}>();const catalog=JSON.parse(row!.payload) as {products:Product[]};
@@ -60,11 +54,12 @@ export async function catalogApi(request:Request,env:Env):Promise<Response|null>
  if(path==='/api/manage/password'){if(request.method!=='POST')return reply({error:'Método inválido.'},405);const p=await request.json() as {password:string};if(typeof p.password!=='string'||p.password.length<12||p.password.length>100||!/[A-Z]/.test(p.password)||!/[a-z]/.test(p.password)||!/[0-9]/.test(p.password)||!/[\W_]/.test(p.password))return reply({error:'Use 12 ou mais caracteres, incluindo maiúscula, minúscula, número e símbolo.'},400);const[oldSalt,oldHash]=account.hash.split(':');if(equal(await passwordHash(p.password,oldSalt),oldHash))return reply({error:'Escolha uma senha diferente da inicial.'},400);const salt=crypto.randomUUID();const hash=salt+':'+await passwordHash(p.password,salt);await db.batch([db.prepare('UPDATE cc_state SET payload=? WHERE id=?').bind(JSON.stringify({...account,hash,mustChange:false}),'admin'),db.prepare('DELETE FROM cc_sessions WHERE id<>?').bind(await digest(token))]);return reply({ok:true})}
  if(path==='/api/manage/session')return reply({username:account.username,mustChange:account.mustChange});
  if(account.mustChange)return reply({error:'Troque a senha inicial para administrar o catálogo.'},403);
+ if(path==='/api/manage/image'){if(request.method!=='POST')return reply({error:'Método inválido.'},405);if(!env.BUCKET)return reply({error:'Armazenamento de imagens indisponível.'},503);const p=await request.json() as {image:string};if(typeof p.image!=='string'||p.image.length>1400000||!/^data:image\/(png|jpeg|webp);base64,[A-Za-z0-9+/=]+$/.test(p.image))return reply({error:'Imagem inválida.'},400);const mime=p.image.slice(5,p.image.indexOf(';'));const bytes=Uint8Array.from(atob(p.image.split(',')[1]),c=>c.charCodeAt(0));const png=bytes[0]===137&&bytes[1]===80&&bytes[2]===78&&bytes[3]===71,jpg=bytes[0]===255&&bytes[1]===216&&bytes[2]===255,webp=new TextDecoder().decode(bytes.slice(0,4))==='RIFF'&&new TextDecoder().decode(bytes.slice(8,12))==='WEBP';if(!(mime==='image/png'&&png||mime==='image/jpeg'&&jpg||mime==='image/webp'&&webp))return reply({error:'O arquivo não corresponde a uma imagem válida.'},400);const id=crypto.randomUUID();await env.BUCKET.put('products/'+id,bytes,{httpMetadata:{contentType:mime}});return reply({url:new URL('/api/media/'+id,request.url).href});}
  if(path==='/api/manage/mail'){const id=url.searchParams.get('id')||'';const mail=await db.prepare('SELECT html FROM cc_contacts WHERE id=?').bind(id).first<{html:string}>();return mail?reply({html:mail.html}):reply({error:'Contato não encontrado.'},404);}
  if(path==='/api/manage/backups'){const r=await db.prepare('SELECT id,payload,created FROM cc_backups ORDER BY created DESC LIMIT 20').all();return reply({backups:r.results});}
  if(path==='/api/manage/contacts'){const contacts=await db.prepare('SELECT id,payload,status,created FROM cc_contacts ORDER BY created DESC LIMIT 100').all();return reply({contacts:contacts.results})}
  if(path==='/api/manage/catalog'){
- if(request.method==='GET')return reply({...catalog,revision:row!.revision});if(request.method!=='PUT')return reply({error:'Método inválido.'},405);const p=await request.json() as {products:unknown;revision:number};const products=validateCatalog(p.products);if(p.revision!==row!.revision)return reply({error:'Outro usuário alterou o catálogo. Recarregue antes de salvar.'},409);
+ if(request.method==='GET')return reply({...catalog,revision:row!.revision});if(request.method!=='PUT')return reply({error:'Método inválido.'},405);const p=await request.json() as {products:unknown;revision:number};const products=validateCatalog(p.products);if(enc.encode(JSON.stringify({products})).length>1800000)return reply({error:'Os dados do catálogo excedem 1,8 MB. Reduza descrições extensas ou divida o acervo antes de importar.'},413);if(p.revision!==row!.revision)return reply({error:'Outro usuário alterou o catálogo. Recarregue antes de salvar.'},409);
  const result=await db.batch([db.prepare('INSERT INTO cc_backups SELECT ?,payload,? FROM cc_state WHERE id=? AND revision=?').bind(crypto.randomUUID(),Date.now(),'catalog',p.revision),db.prepare('UPDATE cc_state SET payload=?,revision=revision+1 WHERE id=? AND revision=?').bind(JSON.stringify({products}),'catalog',p.revision),db.prepare('DELETE FROM cc_backups WHERE id NOT IN (SELECT id FROM cc_backups ORDER BY created DESC LIMIT 20)')]);if(result[1].meta.changes!==1)return reply({error:'Catálogo alterado em outra sessão. Recarregue.'},409);return reply({products,revision:p.revision+1});
  }
  return reply({error:'Operação não encontrada.'},404);

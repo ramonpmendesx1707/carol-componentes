@@ -1,3 +1,9 @@
+# Atualização 2.2
+
+URLs substituídas por instrução direta do proprietário: Instagram https://www.instagram.com/carolfixbrasil/ e Facebook https://www.facebook.com/carolrolamentos.joinville.9 . LinkedIn Joinville preservado. História passa a quatro marcos. 1984 confirmado no LinkedIn; 2000/2014/2026 são composição narrativa fictícia autorizada e identificada na interface. Não transformar números do grupo anterior em estoque/clientes confirmados da nova empresa. Aprovação das datas antes do lançamento definitivo.
+
+---
+
 # Institucional e canais sociais — 2.1
 
 Consulta em 06/10/2026. Sobre anterior: https://carolfix.com.br/sobre-nos/ . Conteúdo enfatiza ética, qualidade, agilidade, dedicação e parceria de longo prazo. O usuário confirmou a continuidade das donas/direção. Redação própria no novo site; sem nomes pessoais ou atribuição dos 15 mil produtos, 20 mil clientes e 10 milhões de peças do grupo anterior à nova operação.

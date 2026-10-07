@@ -1,5 +1,18 @@
 # Carol Componentes
-Versão 2.1 — **Movimento e proximidade**. Identidade verde mineral, superfícies claras e composição mecânica que responde à rolagem. Atendimento em Joinville com envio para todo o Brasil. Barlow e Source Sans; marca tipográfica provisória. A primeira proposta permanece no histórico/tag v1.0.0.
+
+Prévia GitHub Pages: https://ramonpmendesx1707.github.io/carol-componentes/ . Repositório público por autorização explícita do proprietário. Publicação automática via Actions; verificar execução para estado atual.
+
+Versão 2.2 — **Movimento e proximidade**. Identidade verde mineral, superfícies claras e composição mecânica que responde à rolagem. Atendimento em Joinville com envio para todo o Brasil. Barlow e Source Sans; marca tipográfica provisória. A primeira proposta permanece no histórico/tag v1.0.0.
+
+## Comece aqui (humano ou IA)
+
+- [Guia completo para outra IA](docs/HANDOFF-IA.md)
+- [Instalação, GitHub Pages e domínio oficial](DEPLOY_MANUAL.md)
+- [Regras de continuidade](AGENTS.md)
+
+`npm run install:ci` instala o lockfile. `npm run build:pages` gera a publicação estática em dist-pages; `npm run preview:pages` abre a prévia no prefixo /carol-componentes/. `npm run build` mantém o alvo Worker/Sites. Não são builds intercambiáveis. O pacote estático funciona sem a máquina do autor ou plugin Codex.
+
+A seção institucional agora é uma linha do tempo de **quatro marcos históricos/propostos**, com avanço na rolagem; os três passos comerciais foram removidos. Carrossel de marcas, pagamentos e contatos completos integrados.
 
 ## Funcionalidades
 Catálogo público com 50 produtos principais, 290 variantes e 16 categorias; busca, grade/lista, filtros, medidas, informação adicional, desenhos, comparação de três peças, favoritos e cotação persistidos no dispositivo. PDF técnico de 60 páginas com nova identidade, mapa de Joinville e área autenticada de pedidos de melhoria.

@@ -49,3 +49,5 @@ next-env.d.ts
 /build-artifact.tar.gz
 
 *.tsbuildinfo
+
+/dist-pages/

@@ -1,5 +1,11 @@
 # Histórico
 
+## 2.2.0 — 06/10/2026
+História em QUATRO marcos cronológicos (1984/2000/2014/2026), frase de impacto e alinhamento superior; substitui completamente os três passos comerciais. Datas intermediárias propostas, conforme autorização, identificadas para validação. Logos sociais ampliados e links corrigidos. Localização apenas Nosso ponto de encontro. Carrossel compacto com cinco marcas, pausa acessível e catálogos/seleções ilustrativas. Treze logos individuais de pagamento. Contatos/horários físicos e virtuais com novo domínio, único WhatsApp Joinville. Comparação vertical móvel em cartões, foco/abertura de produto preservados. Corrigido overflow em 320 px.
+
+Segundo alvo de build para GitHub Pages, reutilizando interface/dados/assets, com base de URL e 404 SPA; frete local estimado e contato com rascunho no dispositivo, sem e-mail/D1. Workflow de publicação, scripts de prévia, AGENTS.md, handoff detalhado e manual de domínio/continuidade. Arquitetura Worker/Sites preservada. TypeScript/build estático e navegação/layout móvel passaram; publicação depende da configuração/audiência autorizada no GitHub.
+
+
 ## 2.1.0 — 06/10/2026
 Volante com entrada de rotação após carregar a imagem, giro de 155° no hover e maior resposta à rolagem. Apoiar/Fixar com zoom que preserva clique. Efeitos desativados quando há preferência por redução de movimento.
 

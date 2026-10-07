@@ -1,3 +1,11 @@
+# Evidências da entrega 2.2
+
+Linha do tempo de quatro marcos, sem antigos passos; desktop alinhado no topo. Logos/redes corrigidos, cinco marcas, treze logos de pagamento, contatos e horários, novo domínio nos e-mails e única localização. Teste em Chrome 320/390/768/1440: comparação vertical de duas peças, abertura de detalhes, ausência de scroll horizontal, redução de movimento, pausa do carrossel/Kifix e imagens locais. Capturas revisadas. Overflow de órbita e rodapé em 320 px encontrado e corrigido. Teste geral de navegação/WhatsApp passou. TypeScript passou.
+
+Build estático passou com prefixo /carol-componentes/. O mesmo teste de layout passou nesse pacote. Handoff/manual incluem todas as dependências e versões via lockfile e distinguem o adaptador estático do servidor. Nenhum segredo ou lead real versionado. Cronologia e catálogo ilustrativo documentados.
+
+---
+
 # Evidências da entrega 2.1
 
 06/10/2026. `scripts/verify-browser.mjs` e `scripts/verify-refinements.mjs` passaram em Chrome headless: navegação preservada, encaminhamento WhatsApp, máscaras durante digitação, estados por campo, bloqueio de requisição com dados inválidos, CNPJ com dígitos errados, DDD inválido, telefone fixo e colagem +55; chegada/hover do volante, zoom dos componentes e clique, comparação lado a lado, três links sociais, móvel sem overflow e redução de movimento. Capturas de formulário, social e celular revisadas. Zero exceções no teste geral. `scripts/verify-site.mjs` passou para API/catálogo/PDF/contato/feedback. TypeScript passou. Build exigido no fluxo de publicação.

@@ -48,3 +48,6 @@ Registrar melhoria em /validacao e voltar à conversa com a área, página e com
 
 ## Seleção integrada de produtos
 Salvos e linhas de cotação são combinados por lib/selection.ts. O contador superior abre a seleção completa; todos os botões de contato incluem essa seleção na mensagem. Favorito sem medida é enviado como “Medida a definir”. Linhas com medida têm prioridade sobre o favorito do mesmo produto. A persistência continua local, separada em cada site. Mensagens não são enviadas automaticamente pelo WhatsApp.
+
+## Identidade oficial e acesso administrativo — 2.6.0
+Logo fornecida pela empresa em 07/10/2026, preservada em public/images/brand/. Símbolo no cabeçalho e ícones; assinatura completa no rodapé com superfície do próprio tema. As paletas dos sites permanecem. Usuário atual admin; senha configurada apenas no servidor, sem troca inicial obrigatória por solicitação do proprietário. ADMIN_BOOTSTRAP é JSON secreto {username, hash, revision, mustChange}; hash usa salt:PBKDF2-SHA256, 100000 iterações. Uma nova revision aplica o reset uma única vez e revoga sessões/tentativas anteriores. Republicar com a mesma revision não redefine a senha nem derruba sessões novas. Nunca incluir o segredo ou senha em Git/VITE_.

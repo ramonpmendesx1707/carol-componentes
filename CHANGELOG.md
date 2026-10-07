@@ -1,3 +1,6 @@
+## 2.6.0 — 2026-10-07
+Logo oficial no cabeçalho, rodapé, favicon ICO e ícones iOS/PWA. Reset administrativo por segredo versionado no servidor, revogando sessões antigas uma vez; troca inicial opcional.
+
 ## 2.4.0 — 2026-10-06
 - Corrige o reconhecimento de caminhos de imagens recebidas da API após o transform do Pages, inclusive fotos técnicas em descrições. Regressão verificada com imagens realmente carregadas.
 ## 2.5.0 — 2026-10-07

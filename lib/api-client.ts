@@ -5,7 +5,11 @@ export async function apiFetch(path:string,init:RequestInit={}){
  if(r.ok&&(path==='/api/catalog'||path==='/api/manage/catalog')){
   const data=await r.json() as {products:Record<string,unknown>[]};
   const base=location.pathname.startsWith('/carol-componentes/')?'/carol-componentes/':'/';
-  const fix=(v:unknown):unknown=>typeof v==='string'&&v.startsWith('/images/')?base+v.slice(1):Array.isArray(v)?v.map(fix):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,fix(x)])):v;
+  // Build the canonical prefix without an asset literal: the Pages transform
+  // must never rewrite the prefix used to recognize API payloads.
+  const prefix=['','images',''].join('/');
+  const asset=(v:string)=>{const canonical=v.replace(/^\/carol-componentes\/images\//,prefix);return canonical.startsWith(prefix)?base+canonical.slice(1):canonical};
+  const fix=(v:unknown):unknown=>typeof v==='string'?(v.includes('<')?v.replace(/(src=["'])(\/(?:carol-componentes\/)?images\/[^"']+)(["'])/g,(_,a,url,z)=>a+asset(url)+z):asset(v)):Array.isArray(v)?v.map(fix):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,fix(x)])):v;
   return Response.json(fix(data),{status:r.status,headers:r.headers});
  }
  return r;

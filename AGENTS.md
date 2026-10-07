@@ -11,3 +11,5 @@ O site tem dois alvos de build: Worker/D1/Sites e GitHub Pages estático. Nenhum
 Preservar package-lock.json e dependências. Instalar npm run install:ci. Construir npm run build:pages para GitHub Pages ou npm run build para Worker. Não confundir pastas dist-pages e dist. Rodar TypeScript e testes relevantes antes de publicar. Documentar mudança, motivo, validação e limites. Não editar dados ausentes como se confirmados.
 
 GitHub Pages usa base /carol-componentes/. Domínio próprio usa CAROL_PAGES_BASE=/. Atualizar o transform de caminhos se criar novas famílias de assets. Revisar celular 320/390/768 px, redução de movimento, foco, comparativo vertical, fechamento de produto sem salto. Não remover animações solicitadas para esconder um defeito de layout.
+
+A assinatura autorizada do autor no rodapé usa WhatsApp 5541999751171, separado do atendimento comercial. Preservar galeria, endereço automático, seletor de categorias e metadados de tela inicial com nome curto Carol. Rodar scripts/verify-v24-browser.mjs no build Pages para detectar regressão de caminhos de imagens da API.

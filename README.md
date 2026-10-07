@@ -1,3 +1,5 @@
+> Versão atual 2.4.0: imagens da API corrigidas, administração com várias fotos/categorias/endereço automático e ícone de tela inicial com nome Carol. Veja CHANGELOG.md e docs/ADMINISTRACAO.md.
+
 > Atualização v2.3.0: consulte [administração e integrações](docs/ADMINISTRACAO.md) para o backend compartilhado, autenticação, Excel, CNPJ e e-mail. As limitações antigas de catálogo exclusivamente estático foram substituídas pela arquitetura descrita nesse documento.
 
 # Carol Componentes

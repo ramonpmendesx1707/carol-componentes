@@ -1,3 +1,11 @@
+## 2.4.0 — 2026-10-06
+- Corrige o reconhecimento de caminhos de imagens recebidas da API após o transform do Pages, inclusive fotos técnicas em descrições. Regressão verificada com imagens realmente carregadas.
+- Marca Componentes Industriais na mesma linha; remove a repetição acima do título; CTA Chamar no WhatsApp e assinatura discreta do autor.
+- Administração: botões de ação alinhados, galeria de até 10 fotos, seleção/remoção de principal, categorias existentes e cadastro de nova categoria.
+- Endereço gerado automaticamente por nome, com sufixo para duplicidade; produtos existentes mantêm o endereço ao editar.
+- Galeria de miniaturas no produto público; ícones de tela inicial iOS/Android, manifest standalone e nome curto Carol.
+- Testes: home/produto/admin com dados de API, cadastro com duas fotos em R2 local, marca e responsividade 320/390/768/1024/1440.
+
 ## 2.3.0 — 2026-10-06
 - Timeline vinculada à própria linha, progressão reversível de 1984 a 2026 e traço mais espesso; remoção da nota visível solicitada.
 - Marca capitalizada, CTA WhatsApp verde, ícone de comparação em colunas e catálogo visual maior.

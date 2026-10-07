@@ -41,3 +41,12 @@ O botão Baixar versões anteriores exporta os 20 snapshots privados autenticado
 
 ## Testes da versão
 `scripts/verify-v23-browser.mjs` aceita CAROL_TEST_URL, CAROL_PLAYWRIGHT_PACKAGE e CAROL_CHROME_EXECUTABLE. `scripts/verify-admin-api.mjs` exige banco isolado local e CAROL_ADMIN_TEST_PASSWORD; o teste recusa host remoto porque altera produtos e senha. Os testes de UI também confirmaram ida e volta do Excel com 49 produtos no banco de teste, cadastro manual, seleção de 12 destaques e layout mobile. A produção iniciou com os 50 produtos e 290 medidas preservados.
+
+## Refinamentos v2.4
+O cadastro gera o endereço automaticamente ao digitar o nome de um produto novo; resolve conflitos com sufixos numéricos. O endereço existente não muda ao renomear, preservando links. Categorias existentes aparecem em seleção múltipla; novas categorias podem ser incluídas no mesmo formulário. Cada produto aceita até 10 fotos; upload múltiplo, escolha de principal e remoção de referência. Remover foto do produto não apaga o objeto R2, preservando snapshots anteriores. O detalhe público apresenta miniaturas selecionáveis.
+
+Os caminhos canônicos /images/ recebidos da API são resolvidos para a base de publicação em lib/api-client.ts. O prefixo de reconhecimento é construído sem literal de asset, pois o transform do Vite Pages também processa esse módulo. Não restaurar startsWith('/images/') literalmente sem excluir o helper do transform: isso quebrou a publicação 2.3. O teste scripts/verify-v24-browser.mjs intercepta a API com caminhos canônicos e verifica naturalWidth das imagens no build real, incluindo a administração.
+
+Ícones: public/icons/carol-mark.svg é a fonte vetorial; public/apple-touch-icon.png (180 px), carol-192.png e carol-512.png são os exports PNG. public/site.webmanifest usa URLs relativas, nome curto Carol e display standalone. static/index.html e app/layout.tsx incluem Apple touch icon, apple-mobile-web-app-title e suporte standalone. Validar links de ícones/manifest após alterar base/domínio. Adicionar pelo menu Compartilhar > Adicionar à Tela de Início no Safari. A configuração não inclui cache offline do catálogo ou da área administrativa.
+
+A assinatura do rodapé é Ramon Paulino Mendes, ramonpmendesx@gmail.com e WhatsApp 5541999751171, conforme pedido explícito do proprietário. É contato de autoria, separado do único WhatsApp comercial 5547996180088. Nunca redirecionar cotações comerciais para o contato do autor.

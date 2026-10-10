@@ -1,3 +1,10 @@
+# 2.7.0 — Identidade oficial em todo o primeiro site — 10/10/2026
+
+- Azul-marinho, dourado e superfícies claras no catálogo, produto, diálogos, validação, privacidade e administração.
+- Contraste de texto e foco revistos; verde reservado a WhatsApp e estados semânticos.
+- Novo título de contato: “Encontre a solução para sua indústria.”
+- Metadados de navegador e web app alinhados à identidade. Recursos e segundo site preservados.
+
 ## 2.6.0 — 2026-10-07
 Logo oficial no cabeçalho, rodapé, favicon ICO e ícones iOS/PWA. Reset administrativo por segredo versionado no servidor, revogando sessões antigas uma vez; troca inicial opcional.
 
